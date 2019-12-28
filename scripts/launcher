@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+rofi -font "NotoSans Nerd Font Bold 12" -show combi
