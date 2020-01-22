@@ -133,10 +133,11 @@ module-margin-right = 1
 ;   font-3 = FontAwesome:size=10
 ; See the Fonts wiki page for more details
 
-font-0 = "Terminus:size=12;1"
+font-0 = "Misc Termsyn:size=12;1"
 font-1 = "Wuncon Siji:size=12;1"
+font-2 = 
 font-2 = "xos4 Terminus:size=12;1"
-;font-3 = "JFドットK14:style=Regular:size=12;1"
+font-3 = "JFドットK14:style=Regular:size=12;1"
 ; Modules are added to one of the available blocks
 ;   modules-left = cpu ram
 ;   modules-center = xwindow xbacklight
@@ -153,6 +154,7 @@ font-2 = "xos4 Terminus:size=12;1"
 ;name_you_want temperature my-text-label
 ;backlight keyboard title workspaces
 ;;
+;; User modules
 ;checknetwork updates window_switch launcher powermenu sysmenu menu
 ;;
 ;; Bars
@@ -160,7 +162,7 @@ font-2 = "xos4 Terminus:size=12;1"
 ;volume brightness battery_bar 
 
 modules-left = menu title mpd
-modules-center = updates bfilesystem cpu memory temperature network
+modules-center = filesystem cpu memory temperature updates network
 modules-right = bspwm battery alsa date sysmenu
 
 ; The separator will be inserted between the output of each module
