@@ -4,4 +4,4 @@ Polybar is a modified version of adi1090x's polybar-3 (https://github.com/adi109
 
 bspwmrc and sxhkdrc should work out of the box. Install picom, devilspie, pywal, etc. to get your transparency.
 
-![Screenshot][/screenshot.png]
+![Screenshot](/screenshot.png)
