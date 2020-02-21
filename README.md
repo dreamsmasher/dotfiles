@@ -6,6 +6,9 @@ Polybar is a modified version of adi1090x's polybar-3 (https://github.com/adi109
 
 bspwmrc and sxhkdrc should work out of the box. Install picom, devilspie, pywal, etc. to get your transparency.
 
-st config files should be written over the config files provided in the st repository, and should work out of the box too. My st setup uses Xresources for colour and font, and doesn't get corrupted on wallpaper change like Luke Smith's fork of st. I have zero idea how I achieved this.
+st config files should be written over the config files provided in the st repository, and should work out of the box too. My st setup uses Xresources for colour and font, and doesn't get corrupted on wallpaper change like Luke Smith's fork of st. I have zero idea how I achieved this. 
+
+
+The nvim config file assumes you have neovim and vim-plug installed (AUR: neovim-plug). Just copy it over to .config/nvim and run :PlugInstall.
 
 ![Screenshot](/screenshot.png)
