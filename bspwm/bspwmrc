@@ -6,8 +6,9 @@ then
 sxhkd &
 fi
 
-picom &
-wal -i /usr/share/backgrounds/gnome/  &
+xrdb ~/.Xresources &
+picom -C --vsync &
+wal -i /home/normie/Pictures/Wallpapers/  &
 
 # check if plasma if running, if not then run polybar
 if ! pgrep "plasma" > /dev/null
@@ -30,7 +31,9 @@ devilspie -a &
 
 # source the colors.
 . "${HOME}/.cache/wal/colors.sh"
-
+# dual monitor lyfe
+bspc monitor DP-0 -d 1 2 3 4 5 6 7 8 
+bspc monitor DVI-D-0 -d 1 2 3 4 5 6 7 8 
 # Set the border colors.
 bspc config normal_border_color "$color1"
 bspc config active_border_color "$color2"
@@ -44,7 +47,6 @@ bspc rule -a 'Emacs:*' state=tiled
 bspc rule -a 'surf' state=tiled
 
 #Monitor allocation and their workspaces
-bspc monitor -d a b c d e f g h
 
 #Border gaps,width, and padding
 bspc config border_width         0
@@ -56,14 +58,10 @@ bspc config paddingless_monocle  true
 
 bspc config top_padding          0
 
-#padding bullshit
-if pgrep "plasma" > /dev/null
-then
-bspc config bottom_padding       19
-else
-bspc config bottom_padding       0
-fi
-
+#padding ullshit
+bspc config -m DP-0 bottom_padding 0
+bspc config -m DVI-D-0 bottom_padding 22
+/home/normie/.config/bspwm/leftmonitor.sh &
 bspc config left_padding         0
 bspc config right_padding 	0
 

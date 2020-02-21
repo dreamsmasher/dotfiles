@@ -4,11 +4,13 @@
 
 # terminal emulator
 super + Return
-	st 
+	st
 
+super + p
+	st -e python
 # program launcher
 super + d
- rofi -combi-modi window,drun,ssh -theme sidetab -font "NotoSans Nerd Font Bold 12" -show drun
+ rofi -combi-modi window,drun,ssh -theme sidetab -font "Terminus (TTF) Bold 12" -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -26,7 +28,7 @@ XF86MonBrightnessUp
 
 #volume control
 XF86AudioRaiseVolume
-	sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +10%"
+	amixer set Master 10%+
 XF86AudioLowerVolume
 	amixer set Master 10%-
 XF86AudioMute
